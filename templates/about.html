@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .dashboard {
+      display: flex;
+      gap: 1rem;
+      width: 90%;
+      max-width: 1200px;
+    }
+    .left-section {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .right-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .large-card {
+      height: 200px;
+      background-color: #1C1678;
+    }
+    .small-card {
+      height: 100px;
+    }
+
+    .one {
+      background-color: #DAC0A3;
+    }
+    .two {
+      background-color: #F2AFEF;
+      /* F2AFEF */
+    }
+    .three {
+        background-color: #EADBC8;
+    }
+    .four {
+        color: white;
+        background: linear-gradient(90deg, #07054b, #7b02d1);
+    }
+    .five {
+      background-color: #C499F3;
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <div class="dashboard">
+    <!-- right-->
+    <div class="right-section">
+        <div class="card small-card one">کارت اسم</div>
+        <div class="card small-card two">کارت بنویس!</div>
+        <div class="card small-card three">کارت شرح حال‌های من</div>
+        </div>
+        
+    <!-- left-->
+    <div class="left-section">
+      <div dir="rtl" class="card large-card four ">ایده بده، یاد بگیر و جامعه‌ی پزشکی را پویاتر کن</div>
+      <div class="card large-card five">کارت بزرگ ۲</div>
+    </div>
+
+
+  </div>
+
+</body>
+</html>
+{% endblock content %}

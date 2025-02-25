@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elrond</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-blue-500 text-white p-4">
+        <a href="{% url 'home' %}" class="mr-4">Home</a> |
+        <a href="{% url 'about' %}">About</a>
+    </header>
+    <main class="p-4">
+        {% block content %} {% endblock content %}
+    </main>
+</body>
+</html>
